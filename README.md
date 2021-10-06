@@ -19,3 +19,24 @@ node "./test 3/index.js"
 ```
 
 ---
+
+## Test #4
+
+Test test is in folder **test 4**, I tried to build object that have keys as sorted characters and then push/set string we pass if the object property is empty.
+
+```javascript
+{
+  'a,i,k,t': [ 'kita', 'atik', 'tika' ],
+  'a,k,u': [ 'aku', 'kua' ],
+  'a,i,k': [ 'kia' ],
+  'a,a,k,m,n': [ 'makan' ]
+}
+```
+
+Then I used `Object.values()` to just get the values.
+
+To run this you can use jsfiddle/jsbin, browser console or if you have node already setup type this in your terminal:
+
+```bash
+node "./test 4/index.js"
+```
