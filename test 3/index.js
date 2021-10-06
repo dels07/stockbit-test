@@ -6,17 +6,16 @@ function findFirstStringInBracket(str) {
   if (indexFirstBracketFound < 0) return '';
 
   let wordsAfterFirstBracket = str.substr(indexFirstBracketFound);
-  if (wordsAfterFirstBracket) {
-    wordsAfterFirstBracket = wordsAfterFirstBracket.substr(1);
-    let indexClosingBracketFound = wordsAfterFirstBracket.indexOf(")");
-    if (indexClosingBracketFound >= 0) {
-      return wordsAfterFirstBracket.substring(0,
-        indexClosingBracketFound);
-    }
-    else {
-      return '';
-    }
-  } else {
+
+  if (!wordsAfterFirstBracket) return '';
+
+  wordsAfterFirstBracket = wordsAfterFirstBracket.substr(1);
+  let indexClosingBracketFound = wordsAfterFirstBracket.indexOf(")");
+  if (indexClosingBracketFound >= 0) {
+    return wordsAfterFirstBracket.substring(0,
+      indexClosingBracketFound);
+  }
+  else {
     return '';
   }
 }
