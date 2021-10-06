@@ -1,7 +1,7 @@
 function findFirstStringInBracket(str) {
   if (!str.length) return '';
 
-  let indexFirstBracketFound = str.indexOf("(");
+  const indexFirstBracketFound = str.indexOf("(");
 
   if (indexFirstBracketFound < 0) return '';
 
@@ -10,7 +10,7 @@ function findFirstStringInBracket(str) {
   if (!wordsAfterFirstBracket) return '';
 
   wordsAfterFirstBracket = wordsAfterFirstBracket.substr(1);
-  let indexClosingBracketFound = wordsAfterFirstBracket.indexOf(")");
+  const indexClosingBracketFound = wordsAfterFirstBracket.indexOf(")");
 
   return indexClosingBracketFound >= 0
     ? wordsAfterFirstBracket.substring(0, indexClosingBracketFound)
