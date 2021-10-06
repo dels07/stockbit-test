@@ -12,9 +12,9 @@ function findFirstStringInBracket(str) {
   wordsAfterFirstBracket = wordsAfterFirstBracket.substr(1);
   let indexClosingBracketFound = wordsAfterFirstBracket.indexOf(")");
 
-  if (indexClosingBracketFound < 0) return '';
-
-  return wordsAfterFirstBracket.substring(0, indexClosingBracketFound);
+  return indexClosingBracketFound >= 0
+    ? wordsAfterFirstBracket.substring(0, indexClosingBracketFound)
+    : '';
 }
 
 // add simple assertions
