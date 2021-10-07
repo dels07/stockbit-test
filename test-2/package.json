@@ -1,0 +1,37 @@
+{
+  "name": "stockbit-test-2",
+  "version": "1.0.0",
+  "description": "omdb api",
+  "main": "index.js",
+  "engines": {
+    "node": "14"
+  },
+  "scripts": {
+    "start": "node ./src/index.mjs",
+    "start:dev": "node --inspect ./src/index.mjs",
+    "test": "jest",
+    "test:watch": "jest --watch"
+  },
+  "keywords": [
+    "omdb"
+  ],
+  "author": "deli.soetiawan@gmail.com",
+  "license": "UNLICENSED",
+  "dependencies": {
+    "@babel/runtime": "^7.15.4",
+    "axios": "^0.22.0",
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "knex": "^0.95.11",
+    "mysql": "^2.18.1",
+    "mysql2": "^2.3.0",
+    "snakecase-keys": "^5.1.0"
+  },
+  "devDependencies": {
+    "@babel/plugin-transform-runtime": "^7.15.8",
+    "@babel/preset-env": "^7.15.8",
+    "babel-jest": "^27.2.4",
+    "jest": "^27.2.4",
+    "supertest": "^6.1.6"
+  }
+}
