@@ -8,6 +8,54 @@ Also I add a dbfiddle for this: https://www.db-fiddle.com/f/uLqo9jJSv2uRdT3nJYXW
 
 ---
 
+## Test #2
+
+The test is in folder **test-2**, I made simple express app structure which contain service & repository for API
+
+### Specifications
+
+- Node 14.x (I currently using M1, so no node version below 14 available)
+- MySQL
+- Knex for ORM
+- Axios for service call
+- Jest & Supertest for unit test
+
+### How to Run
+
+```bash
+# change directory & install dependencies
+$ cd test-2
+$ npm i
+$ npm i -g knex
+
+# please modify .env for db access & omdb api key
+$ cp .env.example .env
+
+# run migration to create necessary tables
+$ knex migrate:up
+
+# to run app server, by default will run in http://localhost:3000
+$ npm start
+
+# to run unit test
+$ npm test
+```
+
+### Endpoints
+
+```json
+// endpoint information
+GET /
+
+// search movie/series based on keyword
+GET /search?keyword=(keyword)
+
+// view information detail based on title id
+GET /detail/(id)
+```
+
+---
+
 ## Test #3
 
 Test test is in folder **test-3**, I made simple assertions before doing refactor to ensure function currently match expectations.
