@@ -2,9 +2,9 @@
   "name": "stockbit-test-2",
   "version": "1.0.0",
   "description": "omdb api",
-  "main": "index.js",
+  "main": "index.mjs",
   "engines": {
-    "node": "14"
+    "node": "14.x"
   },
   "scripts": {
     "start": "node ./src/index.mjs",
