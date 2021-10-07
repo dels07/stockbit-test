@@ -1,4 +1,5 @@
 .DS_Store
 .vscode
-**/node_modules
-test-2/.env
+node_modules
+.env
+npm-debug.log
